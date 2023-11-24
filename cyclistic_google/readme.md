@@ -9,3 +9,30 @@ The director of marketing at Cyclistic emphasizes that the company's future succ
 >* 2. Why would casual riders buy Cyclistic annual memberships?
 >* 3. How can Cyclistic use digital media to influence casual riders to become members?
 
+### Data Cleaning
+> Tasks Performed in Jupyter Notebooks:
+>* 1. Remove duplicated primary key `ride_id`
+>* 2. Convert object/str datatypes to datetime and add column `total_seconds` for easier analysis
+>* 3. Remove `ride_length` outliers to improve the mean and skewness of the data; information provided in jupyter notebook file <br><br>
+> [Dataset dimensions too large to put into tabels, refer to jupyter notebook file]
+
+### Data Analysis
+#### Q1. How do annual members and casual riders use Cyclistic bikes differently?
+##### Trends of Cyclistic users <br>
+
+|Members|Trends|Casual|
+|:----:|:----:|:----:|
+|Weekdays|Day of Travel|Weekend|
+|4pm - 6pm|Peak Travel Time|3pm - 6pm|
+|Electric bikes, Classic bikes|Rideable Type| Electric bikes, Docked bikes, Classic bikes|
+---
+#### Q2. Why would casual riders buy Cyclistic annual memberships?
+> Once we have spotted why they choose cyclistic bike rentals, we can launch targetted marketing campaigns towards casual riders e.g.
+> 1. Timing - Promotions during weekends, more campaigns between May and September to coincide with summer and fall seasons
+> 2. Place - Better pricing/Better convenience/Promotions around popular areas for casual rides i.e. popular landmarks/ parks
+---
+#### Q3. How can Cyclistic use digital media to influence casual riders to become members?
+> We have already established who our target audience are and their bike rental trends. Launching ads targeted to that demographic would improve visibility to the general public as well <br> 
+---
+<p>&copy; 2023 Chris G </p>
+
