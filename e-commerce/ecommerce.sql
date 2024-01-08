@@ -5,14 +5,14 @@ DROP TABLE IF EXISTS ecomm;
 CREATE TABLE ecomm(
 	  invoice_no INT NOT NULL
 	, stock_code TEXT
-    , description TEXT
-    , invoice_date DATETIME
+	, description TEXT
+	, invoice_date DATETIME
 	, quantity INT
-    , unit_price DECIMAL(8,2)
-    , revenue DECIMAL(10,2)
-    , country TEXT
-    , order_status TEXT
-    );
+	, unit_price DECIMAL(8,2)
+	, revenue DECIMAL(10,2)
+	, country TEXT
+	, order_status TEXT
+	);
 
 LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/ecommerce_v4.csv'
 	INTO TABLE ecomm
@@ -91,12 +91,12 @@ LIMIT 15;
 -- months
 WITH monthly_revenue AS 
 	(
-		SELECT 
-			  MONTH(invoice_date) AS month
-			, SUM(revenue) AS total_revenue
-		FROM ecomm
-		WHERE invoice_date BETWEEN '2010-12-01' AND '2011-12-01'
-		GROUP BY month
+	SELECT 
+		  MONTH(invoice_date) AS month
+		, SUM(revenue) AS total_revenue
+	FROM ecomm
+	WHERE invoice_date BETWEEN '2010-12-01' AND '2011-12-01'
+	GROUP BY month
         )
 SELECT *
 FROM monthly_revenue
@@ -105,13 +105,13 @@ WHERE monthly_revenue.total_revenue > (SELECT ROUND(AVG(monthly_revenue.total_re
 
 WITH daily_revenue AS 
 	(
-		SELECT 
-			  WEEKDAY(invoice_date) AS day
-			, SUM(revenue) AS total_revenue
-		FROM ecomm
-		WHERE invoice_date BETWEEN '2010-12-01' AND '2011-12-01'
-		GROUP BY day
-		ORDER BY day ASC
+	SELECT 
+	  	  WEEKDAY(invoice_date) AS day
+		, SUM(revenue) AS total_revenue
+	FROM ecomm
+	WHERE invoice_date BETWEEN '2010-12-01' AND '2011-12-01'
+	GROUP BY day
+	ORDER BY day ASC
         )
 SELECT *
 FROM daily_revenue
@@ -122,7 +122,7 @@ WHERE daily_revenue.total_revenue > (SELECT ROUND(AVG(daily_revenue.total_revenu
 -- Quarterly earnings  
 SELECT 
 	  quarter(invoice_date) AS quarter
-    , SUM(revenue) AS revenue
+	, SUM(revenue) AS revenue
 FROM ecomm
 WHERE invoice_date BETWEEN '2010-12-01' AND '2011-12-01'
 GROUP BY quarter
