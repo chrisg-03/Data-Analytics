@@ -13,16 +13,16 @@ E-commerce company is unique as unlike most E-commerce businesses, many of their
 >     4. How would we better position ourselves to capture more sales for the coming year?
 
 
-### Top Level Summary Based
+### Suggestions
 >	1. Order Fulfillment<br>
 	With a high fulfillment rate of 98.36%, our supply chain management is efficient. However, the 1.64% cancellation rate indicates potential areas for improvement in inventory forecasting and customer service to enhance order completion.
-
+>
 >	2. Key Performing Areas<br>
 	Our key customer base is concentrated in Northern Europe, particularly the UK, where sales of `home decoration` items like the Regency Cakestand and White Hanging Heart are strong; `leverage on stronger performing business areas to drive sales.`
-
+>
 >	3. Focus for Next Year<br>
 	We should focus on expanding into underperforming markets like Eastern Europe and the Middle East, where sales potential remains untapped. Additionally, `optimizing our marketing efforts on high-revenue days such as Tuesday and Thursday will drive 	more traffic.`
-
+>
 >	4. Positioning for More Sales<br>
 	Enhance supply chain efficiency to maintain strong fulfillment rates. `Capitalize on high-demand periods on November and December, by offering targeted promotions and ensuring top-selling items are well-stocked.`
 
